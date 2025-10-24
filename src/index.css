@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* RotatingImage.css */
+
+.image-container {
+  /* This creates the 3D perspective for the child element */
+  perspective: 1000px; /* Adjust for more/less perspective distortion */
+  width: fit-content; /* Or define a specific width/height */
+  height: fit-content;
+}
+
+.rotating-image {
+  /* Set initial size or adjust as needed */
+  width: 100px; /* Example size */
+  height: auto; 
+  display: block; /* Remove extra space below image */
+
+  /* Apply the 3D rotation animation */
+  animation: rotate3D 5s infinite linear;
+  
+  /* Preserve 3D transforms during animation */
+  transform-style: preserve-3d; 
+}
+
+/* Define the 3D rotation animation */
+@keyframes rotate3D {
+  from {
+    transform: rotateY(0deg); /* Start at 0 degrees rotation around Y axis */
+  }
+  to {
+    transform: rotateY(360deg); /* Rotate 360 degrees around Y axis */
+  }
+}
