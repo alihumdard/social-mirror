@@ -7,6 +7,7 @@ import { SiWhatsapp, SiTiktok, SiInstagram } from 'react-icons/si'; // You'd ins
 import { FaCheck } from 'react-icons/fa';
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
 import FeaturesSection from './components/FeaturesSection';
+import MobileFeacture from './components/MobileFeacture';
 
 
 const steps = [
@@ -107,13 +108,13 @@ const Enterprises = () => {
                     </button>
 
                     {/* Center: Logo */}
-                    <div className="flex-1 flex justify-center">
+                    <Link to={URLS.HOME} className="flex-1 flex justify-center">
                         <img
                             src="/images/logo2.png"
                             alt="Social Mirror Logo"
                             className="h-10"
                         />
-                    </div>
+                    </Link>
 
                     {/* Right: Enterprise Button */}
                     <a
@@ -264,39 +265,11 @@ const Enterprises = () => {
                     </button>
                 </div>
 
-                <div className="md:pl-36 flex-row md:gap-20 md:pt-10 block sm:hidden">
-                    <div className="space-y-8 items-center lg:items-start text-center lg:text-left">
-                        <div className="space-y-4 pt-8 w-full hidden md:block">
-                            <h3 className="text-xl font-semibold">Plug and Play Setup</h3>
-                            <p className="text-gray-400 text-base">
-                                No developers or setup required. Our mirror auto-connects to
-                                the cloud dashboard
-                            </p>
-
-                            {/* This list remains hidden on mobile, which is correct */}
-                            <ul className="space-y-3 pt-4">
-                                <li className="text-gray-500">Design and Display</li>
-                                <li className="text-gray-500">Remote control instantly across multiple locations</li>
-                                <li className="text-gray-500">Secure and Compliant Data</li>
-                                <li className="text-gray-500">Real-time Analytics and insights</li>
-                                <li className="text-gray-500">Stay connected with automated campaigns.</li>
-                                <li className="text-gray-500">Built for enterprise growth</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-center lg:justify-end pr-5 sm:pr-0">
-                        <img
-                            src="/images/Desktop.png" // Using your original image path
-                            // src={dashboardMockup} 
-                            alt="Cloud Dashboard Mockup"
-                            className="w-full md:h-[520px] rounded-lg shadow-2xl mt-12 lg:mt-0"
-                        />
-                    </div>
+                <div>
+                    <MobileFeacture />
                 </div>
-
                 <div className="hidden sm:block">
-                    <FeaturesSection/>
+                    <FeaturesSection />
                 </div>
             </section>
 

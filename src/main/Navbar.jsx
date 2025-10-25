@@ -43,7 +43,7 @@ const Navbar = () => {
                                     Mirror
                                 </Link>
                                 <Link
-
+                                to={URLS.PLATFORM}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
                                 >
                                     Platform
@@ -82,13 +82,13 @@ const Navbar = () => {
                         </button>
 
                         {/* Center: Logo */}
-                        <div className="flex-1 flex justify-center">
+                          <Link to={URLS.HOME} className="flex-1 flex justify-center">
                             <img
                                 src="/images/logo2.png"
                                 alt="Social Mirror Logo"
                                 className="h-10"
                             />
-                        </div>
+                        </Link>
 
                         {/* Right: Enterprise Button */}
                         <a
@@ -117,7 +117,7 @@ const Navbar = () => {
                                     Mirror
                                 </Link>
                                 <Link
-                                    href="#"
+                                    to={URLS.PLATFORM}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
                                 >
                                     Platform
