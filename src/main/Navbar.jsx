@@ -29,39 +29,41 @@ const Navbar = () => {
 
                             {/* Navigation Links */}
                             <div className="flex items-center space-x-6">
-                                <a
-                                    href="#"
+                                <Link
+                                    to={URLS.ENTERISES}
                                     className="flex items-center gap-2 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-full bg-gray-100 font-medium transition-all duration-300 hover:bg-gray-200"
                                 >
                                     Enterprise
                                     <ChevronRight className="text-gray-700 w-4 h-4" />
-                                </a>
+                                </Link>
                                 <Link
                                     to={URLS.MIRROR}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
                                 >
                                     Mirror
                                 </Link>
-                                <a
-                                    href="#"
+                                <Link
+
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
                                 >
                                     Platform
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                    to={URLS.CONTACT}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
                                 >
                                     Contact us
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
                         {/* Right section - "Use code" button */}
                         <div>
-                            <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
-                                Use code
-                            </button>
+                            <Link to={URLS.CODE}>
+                                <button className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                    Use code
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -100,26 +102,32 @@ const Navbar = () => {
 
                     {/* ---------- Mobile Dropdown Menu ---------- */}
                     {isMenuOpen && (
-                        <div className="lg:hidden absolute top-full left-0 right-0 bg-white z-50 py-4">
-                            <div className="flex flex-col space-y-3">
-                                <a
-                                    href="#"
+                        <div className="lg:hidden absolute top-full ml-5 w-full -left-5 px-6 right-20 bg-white z-100 py-4">
+                            <div className="flex flex-col space-y-3 w-full">
+                                <Link
+                                    to={URLS.HOME}
+                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
+                                >
+                                    Home
+                                </Link>
+                                <Link
+                                    to={URLS.MIRROR}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
                                 >
                                     Mirror
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="#"
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
                                 >
                                     Platform
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                    to={URLS.CODE}
                                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
                                 >
-                                    Contact us
-                                </a>
+                                    Use my code
+                                </Link>
                                 <button
                                     className="flex w-32 items-center gap-2 text-white px-3 py-2 rounded-full bg-black font-medium transition-all duration-300 hover:bg-gray-200"
                                 >
@@ -127,7 +135,7 @@ const Navbar = () => {
                                     <ChevronRight className="text-white w-4 h-4" />
                                 </button>
                                 <div className="py-32 px-5 bg-white w-full">
-                                    <h4 className="font-semibold text-2xl text-gray-900 mb-4">Contact</h4>
+                                    <Link to={URLS.CONTACT} className="font-semibold text-2xl text-gray-900 mb-4">Contact</Link>
                                     <ul className="space-y-3 text-sm">
                                         <li><a href="mailto:hello@socialmirror.pro" className="text-gray-700 ">hello@socialmirror.pro</a></li>
                                         <li><a href="tel:+34674158343" className="text-gray-700 ">UK +34674158343</a></li>

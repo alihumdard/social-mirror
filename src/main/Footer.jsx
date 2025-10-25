@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-gray-700 py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <footer className="bg-white text-gray-700 py-16 sm:px-6 lg:px-8 border-t border-gray-200">
             {/* FIXED: Added max-w-7xl back to constrain the width */}
             <div className="px-5">
 

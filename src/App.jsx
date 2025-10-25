@@ -10,7 +10,6 @@ const App = () => {
   return (
     <Router>
       <div className="">
-        <Navbar />
         <main className="flex-grow">
           <Routes>
             {routes.map(({ path, element: Element }) => (
@@ -18,7 +17,6 @@ const App = () => {
             ))}
           </Routes>
         </main>
-        <Footer />
       </div>
 
     </Router>

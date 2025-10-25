@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Dream = () => {
-  return (
-    <div>
-        <div className="bg-white py-20 block md:hidden">
+    return (
+        <div>
+            <div className="bg-white py-20 block md:hidden">
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
@@ -27,8 +27,8 @@ const Dream = () => {
                     </a>
                 </div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
-export default Dream
+export default Dream;
