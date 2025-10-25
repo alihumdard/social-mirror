@@ -171,7 +171,7 @@ const Plateform = () => {
                         {/* Dashboard Mockup Image */}
                         <div className="w-full flex justify-center">
                             <img
-                                src="/public/images/platform.png" // Make sure this path is correct for your image
+                                src="/images/platform.png" // Make sure this path is correct for your image
                                 alt="Dashboard Mockup - Interaction Platform"
                             />
                         </div>
