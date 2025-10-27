@@ -62,7 +62,7 @@ const Plateform2 = () => {
                             {/* Right section - "Use code" button */}
                             <div>
                                 <Link to={URLS.CODE}>
-                                    <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                    <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 transition-colors duration-300">
                                         Use code
                                     </button>
                                 </Link>
