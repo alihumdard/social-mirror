@@ -64,3 +64,60 @@
     transform: rotateY(360deg); /* Rotate 360 degrees around Y axis */
   }
 }
+
+
+/* Gradient animation (unchanged) */
+@keyframes riseGradients {
+  from {
+    /* Start at the bottom (solid blue) */
+    background-position: 0% 100%;
+  }
+  to {
+    /* End at the top (gradient) */
+    background-position: 0% 0%;
+  }
+}
+
+/* Yahan changes kiye gaye hain */
+.animate-gradient-rises {
+  background-image: linear-gradient(
+    to bottom,
+    white 15%,          /* Oopar Black se start ho */
+    #1D4ED8 45%,     /* Change: 15% tak Blue-700 mein fade ho (halka sa black) */
+    #0044ff 20%,     /* Baaki oopar ka hissa solid Blue-700 */
+    #1D4ED8 20.01%,  /* Neeche ka hissa solid Blue-700 se start ho */
+    #1D4ED8 100%     /* Aakhir tak solid Blue-700 rahe */
+  );
+
+  /* Yeh wesa hi rahega */
+  background-size: 100% 200%;
+  animation: riseGradient 1s ease-out;
+}
+
+/* Gradient animation (unchanged) */
+@keyframes riseGradient {
+  from {
+    /* Start at the bottom (solid blue) */
+    background-position: 0% 100%;
+  }
+  to {
+    /* End at the top (gradient) */
+    background-position: 0% 0%;
+  }
+}
+
+/* Yahan changes kiye gaye hain */
+.animate-gradient-rise {
+  background-image: linear-gradient(
+    to bottom,
+    black 15%,          /* Oopar Black se start ho */
+    #1D4ED8 45%,     /* Change: 15% tak Blue-700 mein fade ho (halka sa black) */
+    #3f6be4 20%,     /* Baaki oopar ka hissa solid Blue-700 */
+    #1D4ED8 20.01%,  /* Neeche ka hissa solid Blue-700 se start ho */
+    #1D4ED8 100%     /* Aakhir tak solid Blue-700 rahe */
+  );
+
+  /* Yeh wesa hi rahega */
+  background-size: 100% 200%;
+  animation: riseGradient 1s ease-out;
+}

@@ -7,220 +7,227 @@ const Plateform = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
-            <div className="bg-gradient-to-b from-black to-blue-600">
-                <nav className="max-w-[1500px] px-4 sm:px-6 lg:px-10 w-full flex items-center justify-between py-2  relative">
-                    {/* ---------- Desktop Navbar ---------- */}
-                    <div className="hidden lg:flex items-center justify-between w-full">
-                        {/* Left section - Logo and Navigation Links */}
-                        <div className="flex items-center space-x-8">
-                            {/* Logo */}
-                            <Link to={URLS.HOME}>
-                                <div className="flex items-center">
-                                    <img
-                                        src="/images/logos.png"
-                                        alt="Social Mirror Logo"
-                                        className="h-16"
-                                    />
-                                </div>
-                            </Link>
-
-                            {/* Navigation Links */}
-                            <div className="flex items-center space-x-6">
-                                <a
-                                    href="#"
-                                    className="flex items-center gap-2 text-white px-3 py-2 rounded-full bg-[#28292C] font-medium transition-all duration-300 "
-                                >
-                                    Enterprise
-                                    <ChevronRight className="text-white w-4 h-4" />
-                                </a>
-                                <Link
-                                    to={URLS.MIRROR}
-                                    className="text-white px-3 py-2 rounded-md"
-                                >
-                                    Mirror
-                                </Link>
-                                <Link
-
-                                    className="text-white px-3 py-2 rounded-md"
-                                >
-                                    Platform
-                                </Link>
-                                <Link
-                                    to={URLS.CONTACT}
-                                    className="text-white px-3 py-2 rounded-md"
-                                >
-                                    Contact us
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Right section - "Use code" button */}
-                        <div>
-                            <Link to={URLS.CODE}>
-                                <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 rounded transition-colors duration-300">
-                                    Use code
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-
-                    {/* ---------- Mobile Navbar ---------- */}
-                    <div className="lg:hidden flex items-center justify-between w-full">
-                        {/* Left: Hamburger Button */}
-                        <button
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="p-2 rounded-full text-white "
-                        >
-                            {isMenuOpen ? (
-                                <X className="w-6 h-6" />
-                            ) : (
-                                <Menu className="w-6 h-6" />
-                            )}
-                        </button>
-
-                        {/* Center: Logo */}
-                        <Link to={URLS.HOME} className="flex-1 flex justify-center">
-                            <img
-                                src="/images/logo2.png"
-                                alt="Social Mirror Logo"
-                                className="h-10"
-                            />
-                        </Link>
-
-                        {/* Right: Enterprise Button */}
-                        <a
-                            href="#"
-                            className="flex items-center gap-1 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-full bg-gray-100 font-medium text-sm"
-                        >
-                            Enterprise
-                            <ChevronRight className="text-gray-500 w-3 h-3" />
-                        </a>
-                    </div>
-
-                    {/* ---------- Mobile Dropdown Menu ---------- */}
-                    {isMenuOpen && (
-                        <div className="lg:hidden absolute top-full ml-5 w-full -left-5 px-6 right-20 bg-white z-100 py-4">
-                            <div className="flex flex-col space-y-3 w-full">
-                                <Link
-                                    to={URLS.HOME}
-                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
-                                >
-                                    Home
-                                </Link>
-                                <Link
-                                    to={URLS.MIRROR}
-                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
-                                >
-                                    Mirror
-                                </Link>
-                                <Link
-                                    href="#"
-                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
-                                >
-                                    Platform
-                                </Link>
-                                <Link
-                                    to={URLS.CONTACT}
-                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
-                                >
-                                    Contact us
-                                </Link>
-                                <button
-                                    className="flex w-32 items-center gap-2 text-white px-3 py-2 rounded-full bg-black font-medium transition-all duration-300 hover:bg-gray-200"
-                                >
-                                    Enterprise
-                                    <ChevronRight className="text-white w-4 h-4" />
-                                </button>
-                                <div className="py-32 px-5 bg-white w-full">
-                                    <h4 className="font-semibold text-2xl text-gray-900 mb-4">Contact</h4>
-                                    <ul className="space-y-3 text-sm">
-                                        <li><a href="mailto:hello@socialmirror.pro" className="text-gray-700 ">hello@socialmirror.pro</a></li>
-                                        <li><a href="tel:+34674158343" className="text-gray-700 ">UK +34674158343</a></li>
-                                        <li><a href="tel:+34674158343" className="text-gray-700 ">FR +34674158343</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </nav>
-
-                {/* 4. Removed 'bg-black' but kept 'text-white' */}
-                <section className="text-white py-16 md:py-24 font-sans">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-
-                        {/* Light/Dark Toggle */}
-                        <div className="mb-10 p-1 bg-gray-800 flex space-x-2">
-                            <Link to={URLS.PLATFORM2} className="px-4 py-2 text-sm font-medium rounded-lg">
-                                Light
-                            </Link>
-                            <Link to={URLS.PLATFORM} className="px-4 py-2 text-sm font-medium text-black bg-white shadow-lg">
-                                Dark
-                            </Link>
-                        </div>
-
-                        {/* Heading */}
-                        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight">
-                            Interaction made easy
-                        </h2>
-
-                        {/* Description */}
-                        <p className="text-lg text-gray-400 text-center max-w-2xl mb-12">
-                            From designing your displayed content to sending WhatsApp campaigns, all in one intuitive platform.
-                        </p>
-
-                        {/* Dashboard Mockup Image */}
-                        <div className="w-full flex justify-center">
-                            <img
-                                src="/images/platform.png" // Make sure this path is correct for your image
-                                alt="Dashboard Mockup - Interaction Platform"
-                            />
-                        </div>
-
-                    </div>
-                </section>
-
+            <div>
+                <div
+                    className="fixed inset-0 z-[-1] bg-gradient-to-b from-black to-blue-700 animate-gradient-rise"
+                    aria-hidden="true"
+                />
                 <div>
-                    <section className="py-16 px-6 text-gray-100 text-center rounded-2xl shadow-lg max-w-3xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl text-gray-100 font-bold mb-6 tracking-tight">
-                            Benefit from our Online Platform
-                        </h2>
-                        <p className="text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto">
-                            Manage visuals, campaigns, and engagement across locations — all in one intuitive dashboard.
-                        </p>
-                    </section>
+                    <nav className="max-w-[1500px] px-4 sm:px-6 lg:px-10 w-full flex items-center justify-between py-2  relative">
+                        {/* ---------- Desktop Navbar ---------- */}
+                        <div className="hidden lg:flex items-center justify-between w-full">
+                            {/* Left section - Logo and Navigation Links */}
+                            <div className="flex items-center space-x-8">
+                                {/* Logo */}
+                                <Link to={URLS.HOME}>
+                                    <div className="flex items-center">
+                                        <img
+                                            src="/images/logos.png"
+                                            alt="Social Mirror Logo"
+                                            className="h-16"
+                                        />
+                                    </div>
+                                </Link>
 
-                    <div className="flex flex-col lg:flex-row justify-center items-start gap-6 ">
-                        {/* Left side */}
-                        <div className="flex flex-col gap-6 px-3 md:px-0">
-                            <img src="/images/platform2.png" alt="" className="rounded-2xl w-full max-w-sm object-cover" />
-                            <img src="/images/platform3.png" alt="" className="rounded-2xl w-full max-w-sm object-cover" />
-                            <img src="/images/platform6.png" alt="" className="rounded-2xl w-full max-w-sm object-cover" />
-                        </div>
+                                {/* Navigation Links */}
+                                <div className="flex items-center space-x-6">
+                                    <a
+                                        href="#"
+                                        className="flex items-center gap-2 text-white px-3 py-2 rounded-full bg-[#28292C] font-medium transition-all duration-300 "
+                                    >
+                                        Enterprise
+                                        <ChevronRight className="text-white w-4 h-4" />
+                                    </a>
+                                    <Link
+                                        to={URLS.MIRROR}
+                                        className="text-white px-3 py-2 rounded-md"
+                                    >
+                                        Mirror
+                                    </Link>
+                                    <Link
 
-                        {/* Right side */}
-                        <div className="flex flex-col gap-6">
-                            <img src="/images/platform4.png" alt="" className="rounded-2xl w-full max-w-sm object-cover px-3 md:px-0" />
-                            <div className="gap-6 justify-between items-center px-3 md:px-0">
-                                {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-sm object-cover block sm:hidden" />
-                            <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-sm object-cover  block sm:hidden" /> */}
-                                <img src="/images/platform5.png" alt="" className="rounded-2xl pb-6 w-full max-w-sm object-cover" />
-                                <img src="/images/platform7.png" alt="" className="rounded-2xl w-full max-w-sm object-cover" />
+                                        className="text-white px-3 py-2 rounded-md"
+                                    >
+                                        Platform
+                                    </Link>
+                                    <Link
+                                        to={URLS.CONTACT}
+                                        className="text-white px-3 py-2 rounded-md"
+                                    >
+                                        Contact us
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Right section - "Use code" button */}
+                            <div>
+                                <Link to={URLS.CODE}>
+                                    <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                        Use code
+                                    </button>
+                                </Link>
                             </div>
                         </div>
-                    </div>
 
-                    <section className="flex flex-col items-center justify-center h-[300px] text-center text-white">
-                        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                            Enterprise? <br /> Get your mirror.
-                        </h2>
-                        <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
-                            Learn more
-                        </button>
+                        {/* ---------- Mobile Navbar ---------- */}
+                        <div className="lg:hidden flex items-center justify-between w-full">
+                            {/* Left: Hamburger Button */}
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                className="p-2 rounded-full text-white "
+                            >
+                                {isMenuOpen ? (
+                                    <X className="w-6 h-6" />
+                                ) : (
+                                    <Menu className="w-6 h-6" />
+                                )}
+                            </button>
+
+                            {/* Center: Logo */}
+                            <Link to={URLS.HOME} className="flex-1 flex justify-center">
+                                <img
+                                    src="/images/logo2.png"
+                                    alt="Social Mirror Logo"
+                                    className="h-10"
+                                />
+                            </Link>
+
+                            {/* Right: Enterprise Button */}
+                            <a
+                                href="#"
+                                className="flex items-center gap-1 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-full bg-gray-100 font-medium text-sm"
+                            >
+                                Enterprise
+                                <ChevronRight className="text-gray-500 w-3 h-3" />
+                            </a>
+                        </div>
+
+                        {/* ---------- Mobile Dropdown Menu ---------- */}
+                        {isMenuOpen && (
+                            <div className="lg:hidden absolute top-full ml-5 w-full -left-5 px-6 right-20 bg-white z-100 py-4">
+                                <div className="flex flex-col space-y-3 w-full">
+                                    <Link
+                                        to={URLS.HOME}
+                                        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link
+                                        to={URLS.MIRROR}
+                                        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
+                                    >
+                                        Mirror
+                                    </Link>
+                                    <Link
+                                        href="#"
+                                        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
+                                    >
+                                        Platform
+                                    </Link>
+                                    <Link
+                                        to={URLS.CONTACT}
+                                        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg"
+                                    >
+                                        Contact us
+                                    </Link>
+                                    <button
+                                        className="flex w-32 items-center gap-2 text-white px-3 py-2 rounded-full bg-black font-medium transition-all duration-300 hover:bg-gray-200"
+                                    >
+                                        Enterprise
+                                        <ChevronRight className="text-white w-4 h-4" />
+                                    </button>
+                                    <div className="py-32 px-5 bg-white w-full">
+                                        <h4 className="font-semibold text-2xl text-gray-900 mb-4">Contact</h4>
+                                        <ul className="space-y-3 text-sm">
+                                            <li><a href="mailto:hello@socialmirror.pro" className="text-gray-700 ">hello@socialmirror.pro</a></li>
+                                            <li><a href="tel:+34674158343" className="text-gray-700 ">UK +34674158343</a></li>
+                                            <li><a href="tel:+34674158343" className="text-gray-700 ">FR +34674158343</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </nav>
+
+                    {/* 4. Removed 'bg-black' but kept 'text-white' */}
+                    <section className="text-white py-16 md:py-24 font-sans">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+
+                            {/* Light/Dark Toggle */}
+                            <div className="mb-10 p-1 bg-gray-800 flex space-x-2">
+                                <Link to={URLS.PLATFORM2} className="px-4 py-2 text-sm font-medium rounded-lg">
+                                    Light
+                                </Link>
+                                <Link to={URLS.PLATFORM} className="px-4 py-2 text-sm font-medium text-black bg-white shadow-lg">
+                                    Dark
+                                </Link>
+                            </div>
+
+                            {/* Heading */}
+                            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight">
+                                Interaction made easy
+                            </h2>
+
+                            {/* Description */}
+                            <p className="text-lg text-gray-400 text-center max-w-2xl mb-12">
+                                From designing your displayed content to sending WhatsApp campaigns, all in one intuitive platform.
+                            </p>
+
+                            {/* Dashboard Mockup Image */}
+                            <div className="w-[87%] flex justify-center">
+                                <img
+                                    src="/images/platform.png" // Make sure this path is correct for your image
+                                    alt="Dashboard Mockup - Interaction Platform"
+                                />
+                            </div>
+
+                        </div>
                     </section>
 
+                    <div>
+                        <section className="py-16 px-6 text-gray-100 text-center rounded-2xl shadow-lg max-w-3xl mx-auto">
+                            <h2 className="text-3xl md:text-4xl text-gray-100 font-bold mb-6 tracking-tight">
+                                Benefit from our Online Platform
+                            </h2>
+                            <p className="text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto">
+                                Manage visuals, campaigns, and engagement across locations — all in one intuitive dashboard.
+                            </p>
+                        </section>
+
+                        <div className="flex flex-col lg:flex-row justify-center items-start gap-6 ">
+                            {/* Left side */}
+                            <div className="flex flex-col gap-6 px-3 md:px-0">
+                                <img src="/images/platform2.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                <img src="/images/platform3.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                <img src="/images/platform6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                            </div>
+
+                            {/* Right side */}
+                            <div className="flex flex-col gap-6">
+                                <img src="/images/platform4.png" alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
+                                <div className="gap-6 justify-between items-center px-3 md:px-0">
+                                    {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
+        <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
+                                    <img src="/images/platform5.png" alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
+                                    <img src="/images/platform7.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[235px] md:my-20 rounded-2xl text-white bg-blue-700">
+                            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                                Enterprise? <br /> Get your mirror.
+                            </h2>
+                            <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
+                                Learn more
+                            </button>
+                        </section>
+
+                    </div>
                 </div>
+
             </div>
-            <div className="py-20 sm:py-32 bg-black">
+
+            <div className="py-20 bg-black sm:py-32">
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
@@ -244,6 +251,7 @@ const Plateform = () => {
                     </a>
                 </div>
             </div>
+
             <footer className=" text-white bg-black py-16 sm:px-6 lg:px-8">
                 {/* FIXED: Added max-w-7xl back to constrain the width */}
                 <div className="px-5">
@@ -347,4 +355,3 @@ const Plateform = () => {
 }
 
 export default Plateform
-

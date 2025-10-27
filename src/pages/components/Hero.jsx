@@ -58,7 +58,7 @@ const HeroSection = () => {
               alt="People having fun at a party with a mirror experience"
               className={`
                 w-full h-full object-cover absolute top-0 left-0
-                transition-opacity duration-1000 ease-in-out
+                transition-opacity duration-1000 ease-out
                 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}
               `}
             />
