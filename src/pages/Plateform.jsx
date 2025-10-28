@@ -62,7 +62,7 @@ const Plateform = () => {
                             {/* Right section - "Use code" button */}
                             <div>
                                 <Link to={URLS.CODE}>
-                                    <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 ">
+                                    <button className="bg-[#5700FB] cursor-pointer text-white font-bold py-2 px-4 ">
                                         Use code
                                     </button>
                                 </Link>
@@ -245,7 +245,7 @@ const Plateform = () => {
                     {/* Button */}
                     <a
                         href="#" // Replace with your actual booking link
-                        className="bg-blue-600 text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
+                        className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
                     >
                         Book a 10 minute demo
                     </a>
@@ -311,7 +311,7 @@ const Plateform = () => {
                                     className="w-full sm:flex-1 p-2 bg-[#28292C] focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 {/* FIXED: Changed color, padding, and width */}
-                                <button className="w-full text-sm sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
                                     Subscribe
                                 </button>
                             </div>

@@ -243,7 +243,7 @@ const CodeConfirm = () => {
                                     className="w-full sm:flex-1 p-2 bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 {/* FIXED: Changed color, padding, and width */}
-                                <button className="w-full text-sm sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
                                     Subscribe
                                 </button>
                             </div>

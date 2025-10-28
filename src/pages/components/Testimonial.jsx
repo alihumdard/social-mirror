@@ -217,7 +217,7 @@ const TestimonialSlider = () => {
                     {/* Button */}
                     <a
                         href="#" // Replace with your actual booking link
-                        className="bg-blue-600 text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
+                        className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm transition-colors duration-300"
                     >
                         Book a 10 minute demo
                     </a>

@@ -86,7 +86,7 @@ const Enterprises = () => {
                     {/* Right section - "Use code" button */}
                     <div>
                         <Link to={URLS.CODE}>
-                            <button className="bg-blue-600 cursor-pointer text-white font-bold py-2 px-4 transition-colors duration-300">
+                            <button className="bg-[#5700FB] cursor-pointer text-white font-bold py-2 px-4 transition-colors duration-300">
                                 Use code
                             </button>
                         </Link>
@@ -187,7 +187,7 @@ const Enterprises = () => {
                             Turn every interaction into a lead, seamless and automated.
                         </p>
 
-                        {/* Changed bg-blue-600 to bg-purple-600 to match your images */}
+                        {/* Changed bg-[#5700FB] to bg-purple-600 to match your images */}
                         <button className="px-8 py-3 text-center w-72 bg-blue-700 rounded-md text-lg font-semibold transition-colors duration-200">
                             Book a 10 minute demo
                         </button>
@@ -270,7 +270,7 @@ const Enterprises = () => {
                         No switching tools.
                     </p>
 
-                    <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-lg font-semibold transition-colors duration-200">
+                    <button className="px-8 py-3 bg-[#5700FB] hover:bg-blue-700 rounded-md text-lg font-semibold transition-colors duration-200">
                         Learn more about our platform
                     </button>
                 </div>
@@ -353,7 +353,7 @@ const Enterprises = () => {
                     {/* Button */}
                     <a
                         href="#" // Replace with your actual booking link
-                        className="bg-blue-600 text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
+                        className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
                     >
                         Book a 10 minute demo
                     </a>
@@ -419,7 +419,7 @@ const Enterprises = () => {
                                     className="w-full sm:flex-1 p-2 bg-[#28292C] focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 {/* FIXED: Changed color, padding, and width */}
-                                <button className="w-full text-sm sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
                                     Subscribe
                                 </button>
                             </div>

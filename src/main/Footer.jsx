@@ -16,12 +16,11 @@ const Footer = () => {
                     <div className="lg:order-1">
                         <h4 className="font-semibold text-gray-900 mb-4">About</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">About</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">FAQ</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">24/7 Support</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Cookie Policy</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Privacy Policy</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Terms and Conditions</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">FAQ</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">24/7 Support</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Cookie Policy</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Privacy Policy</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Terms and Conditions</a></li>
                         </ul>
                     </div>
 
@@ -30,10 +29,10 @@ const Footer = () => {
                     <div className="lg:order-2">
                         <h4 className="font-semibold text-gray-900 mb-4">Tools</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Enterprise Services</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Online Platform</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Mirror</a></li>
-                            <li><a href="#" className="text-gray-700 hover:text-purple-600">Sitemap</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Enterprise Services</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Online Platform</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Mirror</a></li>
+                            <li><a href="#" className="text-gray-700 hover:text-purple-600 font-semibold">Sitemap</a></li>
                         </ul>
                     </div>
 
@@ -42,9 +41,9 @@ const Footer = () => {
                     <div className="lg:order-3">
                         <h4 className="font-semibold text-gray-900 mb-4">Contact</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><a href="mailto:hello@socialmirror.pro" className="text-gray-700 hover:text-purple-600">hello@socialmirror.pro</a></li>
-                            <li><a href="tel:+34674158343" className="text-gray-700 hover:text-purple-600">UK +34674158343</a></li>
-                            <li><a href="tel:+34674158343" className="text-gray-700 hover:text-purple-600">FR +34674158343</a></li>
+                            <li><a href="mailto:hello@socialmirror.pro" className="text-gray-700 hover:text-purple-600 font-semibold">hello@socialmirror.pro</a></li>
+                            <li><a href="tel:+34674158343" className="text-gray-700 hover:text-purple-600 font-semibold">UK +34674158343</a></li>
+                            <li><a href="tel:+34674158343" className="text-gray-700 hover:text-purple-600 font-semibold">FR +34674158343</a></li>
                         </ul>
                     </div>
 
@@ -59,14 +58,15 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="w-full sm:flex-1 p-2 bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full sm:flex-1 p-2 bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:font-semibold placeholder:text-gray-800"
                             />
+
                             {/* FIXED: Changed color, padding, and width */}
-                            <button className="w-full text-sm sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                            <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
                                 Subscribe
                             </button>
                         </div>
-                        <p className="text-gray-600 text-sm leading-relaxed">
+                        <p className="text-gray-600 text-sm leading-relaxed font-semibold">
                             By subscribing you agree to our{" "}
                             <a href="#" className="underline hover:text-blue-600">Privacy Policy</a> and provide consent to
                             receive updates from our company{" "}

@@ -60,7 +60,7 @@ const Navbar = () => {
                         {/* Right section - "Use code" button */}
                         <div>
                             <Link to={URLS.CODE}>
-                                <button className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-bold py-2 px-4 transition-colors duration-300">
+                                <button className="bg-[#5700FB] cursor-pointer text-white font-bold py-2 px-4 transition-colors duration-300">
                                     Use code
                                 </button>
                             </Link>

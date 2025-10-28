@@ -1,5 +1,6 @@
 import React from 'react'
 import Dream from './Dream'
+import Sectionwraper from '../../main/Sectiowraper'
 
 const MirrorBlock = () => {
   return (
@@ -24,16 +25,17 @@ const MirrorBlock = () => {
           </div>
         </div>
       </div>
+      <Sectionwraper>
+        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[200px] md:my-20 rounded-2xl text-white bg-blue-700">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            Enterprise? <br /> Get your mirror.
+          </h2>
+          <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
+            Learn more
+          </button>
+        </section>
+      </Sectionwraper>
 
-
-      <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[235px] md:my-20 rounded-2xl text-white bg-blue-700">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          Enterprise? <br /> Get your mirror.
-        </h2>
-        <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
-          Learn more
-        </button>
-      </section>
     </>
   )
 }
