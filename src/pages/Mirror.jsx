@@ -6,7 +6,7 @@ import Footer from '../main/Footer';
 const Mirror = () => {
     return (
         <>
-        <Navbar/>
+            <Navbar />
             <div className="bg-white min-h-screen flex flex-col md:py-20 lg:justify-center items-center">
                 <div className="text-center pt-16 pb-12 lg:pt-0 lg:pb-0 lg:mb-16 px-4">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-4">
@@ -20,23 +20,29 @@ const Mirror = () => {
 
                 <div className="w-full hidden md:block">
 
-                    <img
-                        src="/images/vidio.png"
-                        alt="Mirror experience in a room"
-                        className="w-full h-full lg:h-auto object-cover lg:rounded-lg"
-                    />
+                    <video
+                        src="/vidios/Horizontal 4.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto object-cover"
+                    ></video>
+
                 </div>
                 <div className="w-full block md:hidden">
-
-                    <img
-                        src="/images/Vertical 4 1.png"
-                        alt="Mirror experience in a room"
-                        className="w-full h-full lg:h-auto object-cover lg:rounded-lg"
-                    />
+                    <video
+                        src="/vidios/Horizontal 4.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-[400px] lg:h-auto object-cover"
+                    ></video>
                 </div>
             </div>
             <MirrorBlock />
-            
+
             <div className="bg-white py-32 sm:py-40 hidden md:block">
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-center items-center py-10">
@@ -61,7 +67,7 @@ const Mirror = () => {
                     </a>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 };

@@ -208,11 +208,21 @@ const Enterprises = () => {
                     <div className="flex justify-center items-center py-10 order-1 md:order-2">
                         <div className="image-container">
 
-                            <img
-                                src="/images/z.png"
+                            {/* <img
+                                src="/images/black.png"
                                 alt="Abstract Logo"
                                 className="rotating2-image w-64 h-64 md:w-96 md:h-96"
-                            />
+                            /> */}
+                            <video
+                                src="/public/vidios/Black Vertical.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-[60%] h-[40%] ml-16 sm:ml-20 rounded-lg object-cover my-2"
+                            >
+                                Aapka browser video tag ko support nahi karta.
+                            </video>
                         </div>
                     </div>
 
@@ -323,10 +333,16 @@ const Enterprises = () => {
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
-                            <img
-                                src="/images/z.png" alt="3D rotating item"
-                                className="rotating-image"
-                            />
+                            <video
+                                src="/public/vidios/Black Vertical.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-24 h-40 rounded-lg object-cover my-2"
+                            >
+                                Aapka browser video tag ko support nahi karta.
+                            </video>
                         </div>
                     </div>
                     {/* Heading */}

@@ -91,13 +91,13 @@ const Navbar = () => {
                         </Link>
 
                         {/* Right: Enterprise Button */}
-                        <a
-                            href="#"
+                        <Link
+                            to={URLS.ENTERISES}
                             className="flex items-center gap-1 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-full bg-gray-100 font-medium text-sm"
                         >
                             Enterprise
                             <ChevronRight className="text-gray-500 w-3 h-3" />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* ---------- Mobile Dropdown Menu ---------- */}
@@ -128,12 +128,13 @@ const Navbar = () => {
                                 >
                                     Use my code
                                 </Link>
-                                <button
+                                <Link
+                                to={URLS.ENTERISES}
                                     className="flex w-32 items-center gap-2 text-white px-3 py-2 rounded-full bg-black font-medium transition-all duration-300 hover:bg-gray-200"
                                 >
                                     Enterprise
                                     <ChevronRight className="text-white w-4 h-4" />
-                                </button>
+                                </Link>
                                 <div className="py-32 px-5 bg-white w-full">
                                     <Link to={URLS.CONTACT} className="font-semibold text-2xl text-gray-900 mb-4">Contact</Link>
                                     <ul className="space-y-3 text-sm">

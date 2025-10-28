@@ -201,7 +201,7 @@ const TestimonialSlider = () => {
 
             <div className="bg-white py-32 sm:py-40 hidden md:block">
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-center items-center py-10">
+                    <div className="flex justify-center items-center">
                         <div className="image-container">
                             <img
                                 src="/images/z.png" alt="3D rotating item"
