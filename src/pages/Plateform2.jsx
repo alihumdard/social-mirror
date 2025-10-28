@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import URLS from '../config/urls.config'
 import { ChevronRight, Facebook, Instagram, Linkedin, Menu, Twitter, X, Youtube } from 'lucide-react'
+import Sectionwraper from '../main/Sectiowraper'
 
 const Plateform2 = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -155,10 +156,10 @@ const Plateform2 = () => {
 
                             {/* Light/Dark Toggle */}
                             <div className="mb-10 p-1 bg-gray-200 flex space-x-2">
-                                <Link to={URLS.PLATFORM2} className="px-4 py-2 text-sm font-medium text-white bg-black">
+                                <Link to={URLS.PLATFORM2} className="px-8 py-2 text-sm font-medium text-white bg-black">
                                     Light
                                 </Link>
-                                <Link to={URLS.PLATFORM} className="px-4 py-2 text-sm font-medium text-black">
+                                <Link to={URLS.PLATFORM} className="px-8 py-2 text-sm font-medium text-black">
                                     Dark
                                 </Link>
                             </div>
@@ -212,14 +213,16 @@ const Plateform2 = () => {
                                 </div>
                             </div>
                         </div>
-                        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[235px] md:my-20 rounded-2xl text-white bg-blue-700">
-                            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                                Enterprise? <br /> Get your mirror.
-                            </h2>
-                            <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
-                                Learn more
-                            </button>
-                        </section>
+                        <Sectionwraper>
+                            <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[200px] md:my-20 rounded-2xl text-white bg-[#5700FB]">
+                                <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                                    Enterprise? <br /> Get your mirror.
+                                </h2>
+                                <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
+                                    Learn more
+                                </button>
+                            </section>
+                        </Sectionwraper>
 
 
                     </div>

@@ -18,20 +18,20 @@ const ContactForm = () => {
                         <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-5">
                             Get in touch
                         </h2>
-                        <p className="text-lg text-gray-700 mb-10">
+                        <p className="text-lg font-bold text-gray-700 mb-10">
                             We'd love to hear from you. Please use the form to send us a message
                             or contact us using the details below.
                         </p>
 
                         {/* Contact Details */}
                         <div className="space-y-3 mb-10">
-                            <p className="text-gray-800 font-medium">hello@socialmirror.pro</p>
-                            <p className="text-gray-800 font-medium">UK +34674158343</p>
-                            <p className="text-gray-800 font-medium">FR +34674158343</p>
+                            <p className="text-gray-800 font-xs">hello@socialmirror.pro</p>
+                            <p className="text-gray-800 font-xs">UK +34674158343</p>
+                            <p className="text-gray-800 font-xs">FR +34674158343</p>
                         </div>
 
                         {/* Social Icons */}
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-4">
                             <a
                                 href="#"
                                 className="text-gray-800 hover:text-violet-600 transition-colors text-2xl"

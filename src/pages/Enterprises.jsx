@@ -176,7 +176,7 @@ const Enterprises = () => {
             <section className="min-h-screen bg-black text-white flex items-center justify-center p-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-                    <div className="space-y-6 md:space-y-10 order-2 md:order-1 flex flex-col md:text-left">
+                    <div className="space-y-6 md:space-y-10 order-2 md:order-1 flex flex-col md:text-left sm:ml-10">
 
                         <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
                             Start converting engagement into measurable ROI
@@ -283,9 +283,9 @@ const Enterprises = () => {
                 </div>
             </section>
 
-            <section className="bg-black py-16 md:py-24">
-                <div className="flex flex-col max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-700 rounded-xl p-8 md:p-12 text-white shadow-lg">
-                    <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:justify-start gap-4 md:gap-x-8 md:gap-y-4 mb-10 md:mb-12 order-2 md:order-1">
+            <section className="bg-black py-16 md:py-20">
+                <div className="flex flex-col max-w-5xl mx-auto px-4 sm:px-6 lg:px-14 bg-[#5700FB] rounded-xl p-8 md:p-12 text-white shadow-lg">
+                    <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:justify-between gap-4 md:gap-x-8 md:gap-y-4 mb-10 md:mb-12 order-2 md:order-1">
                         <div className="flex items-center space-x-2">
                             <FaCheck className="text-blue-300" />
                             <span className="text-lg">Product photos</span>
@@ -304,8 +304,11 @@ const Enterprises = () => {
                         </div>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8 order-1 md:order-2">
-                        Download our advocacy kit
+                    <h2 className="text-4xl md:text-5xl font-semibold leading-tight order-1 md:order-2">
+                        Download 
+                    </h2>
+                      <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-8 order-1 md:order-2">
+                        our advocacy kit
                     </h2>
 
                     <div className="order-3 w-full">
@@ -329,7 +332,7 @@ const Enterprises = () => {
                 </div>
             </section>
 
-            <div className="py-20 sm:py-32">
+            <div className="py-20 sm:pb-32">
                 <div className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
@@ -339,7 +342,7 @@ const Enterprises = () => {
                                 loop
                                 muted
                                 playsInline
-                                className="w-24 h-40 rounded-lg object-cover my-2"
+                                className="w-28 h-40 rounded-lg object-cover my-2"
                             >
                                 Aapka browser video tag ko support nahi karta.
                             </video>

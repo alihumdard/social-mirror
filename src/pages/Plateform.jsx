@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import URLS from '../config/urls.config'
 import { ChevronRight, Facebook, Instagram, Linkedin, Menu, Twitter, X, Youtube } from 'lucide-react'
+import Sectionwraper from '../main/Sectiowraper'
 
 const Plateform = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -155,10 +156,10 @@ const Plateform = () => {
 
                             {/* Light/Dark Toggle */}
                             <div className="mb-10 p-1 bg-gray-800 flex space-x-2">
-                                <Link to={URLS.PLATFORM2} className="px-4 py-2 text-sm font-medium rounded-lg">
+                                <Link to={URLS.PLATFORM2} className="px-8 py-2 text-sm font-medium rounded-lg">
                                     Light
                                 </Link>
-                                <Link to={URLS.PLATFORM} className="px-4 py-2 text-sm font-medium text-black bg-white shadow-lg">
+                                <Link to={URLS.PLATFORM} className="px-8 py-2 text-sm font-medium text-black bg-white shadow-lg">
                                     Dark
                                 </Link>
                             </div>
@@ -213,7 +214,8 @@ const Plateform = () => {
                                 </div>
                             </div>
                         </div>
-                        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[235px] md:my-20 rounded-2xl text-white bg-blue-700">
+                        <Sectionwraper>
+                        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[200px] md:my-20 rounded-2xl text-white bg-[#5700FB]">
                             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
                                 Enterprise? <br /> Get your mirror.
                             </h2>
@@ -221,6 +223,7 @@ const Plateform = () => {
                                 Learn more
                             </button>
                         </section>
+                        </Sectionwraper>
 
                     </div>
                 </div>
@@ -311,15 +314,15 @@ const Plateform = () => {
                                     className="w-full sm:flex-1 p-2 bg-[#28292C] focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 {/* FIXED: Changed color, padding, and width */}
-                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 transition-colors duration-300">
                                     Subscribe
                                 </button>
                             </div>
                             <p className="text-white text-sm leading-relaxed">
                                 By subscribing you agree to our{" "}
-                                <a href="#" className="underline hover:text-blue-600">Privacy Policy</a> and provide consent to
+                                <a href="#" className="underline hover:text-[#5700FB]">Privacy Policy</a> and provide consent to
                                 receive updates from our company{" "}
-                                <a href="#" className="underline hover:text-blue-600">Conditions</a>.
+                                <a href="#" className="underline hover:text-[#5700FB]">Conditions</a>.
                             </p>
                         </div>
                     </div>
