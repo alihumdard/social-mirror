@@ -137,7 +137,7 @@ const ContactForm = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="w-full py-4 px-6 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
+                                className="w-full py-4 px-6 bg-[#5700FB] cursor-pointer text-white font-semibold rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
                             >
                                 Submit
                             </button>
@@ -164,7 +164,7 @@ const ContactForm = () => {
                         {/* Button */}
                         <a
                             href="#" // Replace with your actual booking link
-                            className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
+                            className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm transition-colors duration-300"
                         >
                             Book a 10 minute demo
                         </a>

@@ -188,7 +188,7 @@ const Enterprises = () => {
                         </p>
 
                         {/* Changed bg-[#5700FB] to bg-purple-600 to match your images */}
-                        <button className="px-8 py-3 text-center w-72 bg-blue-700 rounded-md text-lg font-semibold transition-colors duration-200">
+                        <button className="px-8 py-3 text-center w-72 bg-[#5700FB] rounded-md text-lg font-semibold transition-colors duration-200">
                             Book a 10 minute demo
                         </button>
 
@@ -214,7 +214,7 @@ const Enterprises = () => {
                                 className="rotating2-image w-64 h-64 md:w-96 md:h-96"
                             /> */}
                             <video
-                                src="/public/vidios/Black Vertical.mp4"
+                                src="/vidios/Black Vertical.mp4"
                                 autoPlay
                                 loop
                                 muted
@@ -270,7 +270,7 @@ const Enterprises = () => {
                         No switching tools.
                     </p>
 
-                    <button className="px-8 py-3 bg-[#5700FB] hover:bg-blue-700 rounded-md text-lg font-semibold transition-colors duration-200">
+                    <button className="px-8 py-3 bg-[#5700FB] hover:bg-[#5700FB] rounded-md text-lg font-semibold transition-colors duration-200">
                         Learn more about our platform
                     </button>
                 </div>
@@ -356,7 +356,7 @@ const Enterprises = () => {
                     {/* Button */}
                     <a
                         href="#" // Replace with your actual booking link
-                        className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm hover:bg-blue-700 transition-colors duration-300"
+                        className="bg-[#5700FB] text-white font-semibold py-3 px-8 shadow-sm hover:bg-[#5700FB] transition-colors duration-300"
                     >
                         Book a 10 minute demo
                     </a>
@@ -422,7 +422,7 @@ const Enterprises = () => {
                                     className="w-full sm:flex-1 p-2 bg-[#28292C] focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 {/* FIXED: Changed color, padding, and width */}
-                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-blue-700 transition-colors duration-300">
+                                <button className="w-full text-sm sm:w-auto bg-[#5700FB] text-white font-semibold py-2 px-4 hover:bg-[#5700FB] transition-colors duration-300">
                                     Subscribe
                                 </button>
                             </div>
