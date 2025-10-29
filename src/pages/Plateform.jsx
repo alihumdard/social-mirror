@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import URLS from '../config/urls.config'
 import { ChevronRight, Facebook, Instagram, Linkedin, Menu, Twitter, X, Youtube } from 'lucide-react'
-import Sectionwraper from '../main/Sectiowraper'
+import Sectionwraper2 from '../main/SectionWraper2'
 
 const Plateform = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -214,16 +214,17 @@ const Plateform = () => {
                                 </div>
                             </div>
                         </div>
-                        <Sectionwraper>
-                        <section className="flex flex-col items-center justify-center h-[300px] text-center mx-4 my-10 md:mx-[200px] md:my-20 rounded-2xl text-white bg-[#5700FB]">
-                            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                                Enterprise? <br /> Get your mirror.
-                            </h2>
-                            <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
-                                Learn more
-                            </button>
-                        </section>
-                        </Sectionwraper>
+                        <Sectionwraper2>
+                            <section className="flex flex-col items-center justify-center h-[300px] text-center my-10 rounded-2xl text-white bg-[#5700FB]">
+                                <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                                    Enterprise? <br /> Get your mirror.
+                                </h2>
+                                <button className="bg-white text-black font-medium px-6 py-2 rounded-md hover:bg-gray-200 transition-all duration-200">
+                                    Learn more
+                                </button>
+                            </section>
+                        </Sectionwraper2>
+
 
                     </div>
                 </div>

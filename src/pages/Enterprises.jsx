@@ -188,12 +188,12 @@ const Enterprises = () => {
                         </p>
 
                         {/* Changed bg-[#5700FB] to bg-purple-600 to match your images */}
-                        <button className="px-8 py-3 text-center w-72 bg-[#5700FB] rounded-md text-lg font-semibold transition-colors duration-200">
+                        <button className="px-6 py-3 text-center w-60 bg-[#5700FB] rounded-md text-md font-semibold transition-colors duration-200">
                             Book a 10 minute demo
                         </button>
 
                         <div className="flex flex-col sm:flex-row md:items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
-                            <div className="flex space-x-3 text-2xl flex-shrink-0">
+                            <div className="flex space-x-1 text-2xl flex-shrink-0">
                                 <SiWhatsapp className="text-green-500" />
                                 <SiTiktok className="text-black bg-white rounded-full p-0.5" />
                                 <SiInstagram className="text-pink-500" />
@@ -337,7 +337,7 @@ const Enterprises = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <video
-                                src="/public/vidios/Black Vertical.mp4"
+                                src="/vidios/Black Vertical.mp4"
                                 autoPlay
                                 loop
                                 muted
