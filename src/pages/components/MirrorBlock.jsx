@@ -8,19 +8,19 @@ const MirrorBlock = () => {
       <div className="flex flex-col md:flex-row justify-center items-start gap-6 ">
         {/* Left side */}
         <div className="flex flex-col gap-6 px-3 md:px-0">
-          <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-          <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-          <img src="/images/Card4.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+          <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-xl object-cover" />
+          <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-xl object-cover" />
+          <img src="/images/Card4.png" alt="" className="rounded-2xl w-full max-w-xl object-cover" />
         </div>
 
         {/* Right side */}
         <div className="flex flex-col gap-6">
-          <img src="/images/Card3.png" alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
+          <img src="/images/Card3.png" alt="" className="rounded-2xl w-full max-w-xl object-cover px-3 md:px-0" />
           <div className="gap-6 justify-between items-center px-3 md:px-0">
-            {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
-        <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
-            <img src="/images/Card5.png" alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
-            <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+            {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-xl object-cover block sm:hidden" />
+            <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-xl object-cover  block sm:hidden" /> */}
+            <img src="/images/Card5.png" alt="" className="rounded-2xl pb-6 w-full max-w-xl object-cover" />
+            <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-xl object-cover" />
           </div>
         </div>
       </div>

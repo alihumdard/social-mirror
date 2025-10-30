@@ -36,7 +36,7 @@ const Hero = () => {
     // Naya interval shuru karein
     intervalIdRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 3000); // 3 seconds
+    }, 2000); // 3 seconds
   };
 
   // --- NEW: Function to STOP auto-rotation ---
