@@ -4,6 +4,8 @@ import { ChevronRight, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
+import logosImg from '../assets/images/logos.png';
+import logo2Img from '../assets/images/logo2.png';
 
 
 const CodeConfirm = () => {
@@ -19,7 +21,7 @@ const CodeConfirm = () => {
                         <Link to={URLS.HOME}>
                             <div className="flex items-center">
                                 <img
-                                    src="/images/logos.png"
+                                    src={logosImg}
                                     alt="Social Mirror Logo"
                                     className="h-16"
                                 />
@@ -83,7 +85,7 @@ const CodeConfirm = () => {
                     {/* Center: Logo */}
                     <div className="flex-1 flex justify-center">
                         <img
-                            src="/images/logo2.png"
+                            src={logo2Img}
                             alt="Social Mirror Logo"
                             className="h-10"
                         />
@@ -262,7 +264,7 @@ const CodeConfirm = () => {
 
                         {/* Logo */}
                         <div className="font-bold text-gray-900 text-xl flex items-center justify-center md:justify-start md:order-1">
-                            <img src="/images/logos.png" alt="Social Mirror Logo" />
+                            <img src={logosImg} alt="Social Mirror Logo" />
                         </div>
 
                         {/* Copyright */}

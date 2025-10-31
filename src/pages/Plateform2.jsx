@@ -4,6 +4,16 @@ import URLS from '../config/urls.config'
 import { ChevronRight, Facebook, Instagram, Linkedin, Menu, Twitter, X, Youtube } from 'lucide-react'
 import Sectionwraper from '../main/Sectiowraper'
 import Sectionwraper2 from '../main/SectionWraper2'
+import footerLogo from '../assets/images/footer.png';
+import logo2Img from '../assets/images/logo2.png';
+import platform2_1 from '../assets/images/platfprm2.1.png';
+import platform2_2 from '../assets/images/platform2.2.png';
+import platform2_3 from '../assets/images/platform2.3.png';
+import platform2_4 from '../assets/images/platform2.4.png';
+import platform2_5 from '../assets/images/platform2.5.png';
+import platform2_6 from '../assets/images/platform2.6.png';
+import platform2_7 from '../assets/images/platform2.7.png';
+import zImg from '../assets/images/z.png';
 
 const Plateform2 = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +34,7 @@ const Plateform2 = () => {
                                 <Link to={URLS.HOME}>
                                     <div className="flex items-center">
                                         <img
-                                            src="/images/footer.png"
+                                            src={footerLogo}
                                             alt="Social Mirror Logo"
                                             className="h-16"
                                         />
@@ -88,7 +98,7 @@ const Plateform2 = () => {
                             {/* Center: Logo */}
                             <Link to={URLS.HOME} className="flex-1 flex justify-center">
                                 <img
-                                    src="/images/logo2.png"
+                                    src={logo2Img}
                                     alt="Social Mirror Logo"
                                     className="h-10"
                                 />
@@ -177,7 +187,7 @@ const Plateform2 = () => {
                             {/* Dashboard Mockup Image */}
                             <div className="w-[87%] flex justify-center">
                                 <img
-                                    src="images/platfprm2.1.png" // Make sure this path is correct for your image
+                                    src={platform2_1} // Make sure this path is correct for your image
                                     alt="Dashboard Mockup - Interaction Platform"
                                 />
                             </div>
@@ -198,19 +208,19 @@ const Plateform2 = () => {
                         <div className="flex flex-col lg:flex-row justify-center items-start gap-6 ">
                             {/* Left side */}
                             <div className="flex flex-col gap-6 px-3 md:px-0">
-                                <img src="/images/platform2.2.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-                                <img src="/images/platform2.3.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-                                <img src="/images/platform2.4.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                <img src={platform2_2} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                <img src={platform2_3} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                <img src={platform2_4} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
                             </div>
 
                             {/* Right side */}
                             <div className="flex flex-col gap-6">
-                                <img src="/images/platform2.5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
+                                <img src={platform2_5} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover px-3 md:px-0" />
                                 <div className="gap-6 justify-between items-center px-3 md:px-0">
-                                    {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
-        <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
-                                    <img src="/images/platform2.6.png" alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
-                                    <img src="/images/platform2.7.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                    {/* <img src={Card5} alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
+        <img src={Card6} alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
+                                    <img src={platform2_6} alt="" className="rounded-2xl pb-6 w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                    <img src={platform2_7} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
                                 </div>
                             </div>
                         </div>
@@ -236,7 +246,7 @@ const Plateform2 = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <img
-                                src="/images/z.png" alt="3D rotating item"
+                                src={zImg} alt="3D rotating item"
                                 className="rotating-image"
                             />
                         </div>
@@ -335,7 +345,7 @@ const Plateform2 = () => {
 
                         {/* Logo */}
                         <div className="font-bold text-black text-xl flex items-center justify-center md:justify-start md:order-1">
-                            <img src="/images/footer.png" alt="Social Mirror Logo" />
+                            <img src={footerLogo} alt="Social Mirror Logo" />
                         </div>
 
                         {/* Copyright */}

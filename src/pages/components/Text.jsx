@@ -1,13 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 // 1. Import Framer Motion hooks
 import { motion, useScroll, useTransform } from 'framer-motion';
+import hero from '../../assets/images/hero.png';
+import capture1 from '../../assets/images/capture1.png';
+import capture2 from '../../assets/images/capture2.png';
+import capture3 from '../../assets/images/capture3.png';
 
 // Images array (same as yours)
 const heroImages = [
-    "/images/hero.png",
-    "/images/capture1.png",
-    "/images/capture2.png",
-    "/images/capture3.png"
+    hero,
+    capture1,
+    capture2,
+    capture3
 ];
 
 // Renamed component for clarity

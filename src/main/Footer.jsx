@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
+import footerLogo from '../assets/images/footer.png';
 
 const Footer = () => {
     return (
@@ -81,7 +82,7 @@ const Footer = () => {
 
                     {/* Logo */}
                     <div className="font-bold text-gray-900 text-xl flex items-center justify-center md:justify-start md:order-1">
-                        <img src="/images/footer.png" alt="Social Mirror Logo" />
+                        <img src={footerLogo} alt="Social Mirror Logo" />
                     </div>
 
                     {/* Copyright */}

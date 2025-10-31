@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom'
 import URLS from '../config/urls.config'
 import { ChevronRight, Facebook, Instagram, Linkedin, Menu, Twitter, X, Youtube } from 'lucide-react'
 import Sectionwraper2 from '../main/SectionWraper2'
+import logosImg from '../assets/images/logos.png';
+import logo2Img from '../assets/images/logo2.png';
+import platformImg from '../assets/images/platform.png';
+import platform2Img from '../assets/images/platform2.png';
+import platform3Img from '../assets/images/platform3.png';
+import platform4Img from '../assets/images/platform4.png';
+import platform5Img from '../assets/images/platform5.png';
+import platform6Img from '../assets/images/platform6.png';
+import platform7Img from '../assets/images/platform7.png';
+import zImg from '../assets/images/z.png';
 
 const Plateform = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +33,7 @@ const Plateform = () => {
                                 <Link to={URLS.HOME}>
                                     <div className="flex items-center">
                                         <img
-                                            src="/images/logos.png"
+                                            src={logosImg}
                                             alt="Social Mirror Logo"
                                             className="h-16"
                                         />
@@ -87,7 +97,7 @@ const Plateform = () => {
                             {/* Center: Logo */}
                             <Link to={URLS.HOME} className="flex-1 flex justify-center">
                                 <img
-                                    src="/images/logo2.png"
+                                    src={logo2Img}
                                     alt="Social Mirror Logo"
                                     className="h-10"
                                 />
@@ -177,7 +187,7 @@ const Plateform = () => {
                             {/* Dashboard Mockup Image */}
                             <div className="w-[87%] flex justify-center">
                                 <img
-                                    src="/images/platform.png" // Make sure this path is correct for your image
+                                    src={platformImg} // Make sure this path is correct for your image
                                     alt="Dashboard Mockup - Interaction Platform"
                                 />
                             </div>
@@ -198,19 +208,19 @@ const Plateform = () => {
                         <div className="flex flex-col lg:flex-row justify-center items-start gap-6 ">
                             {/* Left side */}
                             <div className="flex flex-col gap-6 px-3 md:px-0">
-                                <img src="/images/platform2.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-                                <img src="/images/platform3.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-                                <img src="/images/platform6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                <img src={platform2Img} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                <img src={platform3Img} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                <img src={platform6Img} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
                             </div>
 
                             {/* Right side */}
                             <div className="flex flex-col gap-6">
-                                <img src="/images/platform4.png" alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
+                                <img src={platform4Img} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover px-3 md:px-0" />
                                 <div className="gap-6 justify-between items-center px-3 md:px-0">
-                                    {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
-        <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
-                                    <img src="/images/platform5.png" alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
-                                    <img src="/images/platform7.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+                                    {/* <img src={Card5} alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
+        <img src={Card6} alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
+                                    <img src={platform5Img} alt="" className="rounded-2xl pb-6 w-full max-w-lg 2xl:max-w-2xl object-cover" />
+                                    <img src={platform7Img} alt="" className="rounded-2xl w-full max-w-lg 2xl:max-w-2xl object-cover" />
                                 </div>
                             </div>
                         </div>
@@ -236,7 +246,7 @@ const Plateform = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <img
-                                src="/images/z.png" alt="3D rotating item"
+                                src={zImg} alt="3D rotating item"
                                 className="rotating-image"
                             />
                         </div>
@@ -334,7 +344,7 @@ const Plateform = () => {
 
                         {/* Logo */}
                         <div className="font-bold text-white text-xl flex items-center justify-center md:justify-start md:order-1">
-                            <img src="/images/logos.png" alt="Social Mirror Logo" />
+                            <img src={logosImg} alt="Social Mirror Logo" />
                         </div>
 
                         {/* Copyright */}

@@ -3,6 +3,8 @@ import Sectionwraper from './Sectiowraper';
 import { ChevronRight, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
+import logo from '../assets/images/logo.png';
+import logo2 from '../assets/images/logo2.png';
 
 const Navbar = () => {
     // State to manage the mobile menu (open/closed)
@@ -20,7 +22,7 @@ const Navbar = () => {
                             <Link to={URLS.HOME}>
                                 <div className="flex items-center">
                                     <img
-                                        src="/images/logo.png"
+                                        src={logo}
                                         alt="Social Mirror Logo"
                                         className="h-16"
                                     />
@@ -84,7 +86,7 @@ const Navbar = () => {
                         {/* Center: Logo */}
                           <Link to={URLS.HOME} className="flex-1 flex justify-center">
                             <img
-                                src="/images/logo2.png"
+                                src={logo2}
                                 alt="Social Mirror Logo"
                                 className="h-10"
                             />

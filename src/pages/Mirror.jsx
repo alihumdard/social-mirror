@@ -2,6 +2,8 @@ import React from 'react';
 import MirrorBlock from './components/MirrorBlock';
 import Navbar from '../main/Navbar';
 import Footer from '../main/Footer';
+import zImg from '../assets/images/z.png';
+import horizontalVideo from '../assets/vidios/Horizontal 4.mp4';
 
 const Mirror = () => {
     return (
@@ -21,7 +23,7 @@ const Mirror = () => {
                 <div className="w-full hidden md:block">
 
                     <video
-                        src="/vidios/Horizontal 4.mp4"
+                        src={horizontalVideo}
                         autoPlay
                         loop
                         muted
@@ -32,7 +34,7 @@ const Mirror = () => {
                 </div>
                 <div className="w-full block md:hidden">
                     <video
-                        src="/vidios/Horizontal 4.mp4"
+                        src={horizontalVideo}
                         autoPlay
                         loop
                         muted
@@ -48,7 +50,7 @@ const Mirror = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <img
-                                src="/images/z.png" alt="3D rotating item"
+                                src={zImg} alt="3D rotating item"
                                 className="rotating-image"
                             />
                         </div>

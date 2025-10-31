@@ -5,6 +5,7 @@ import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/f
 import { FaXTwitter } from "react-icons/fa6"; // This is the new 'X' logo
 import Navbar from "../main/Navbar";
 import Footer from "../main/Footer";
+import zImg from '../assets/images/z.png';
 
 const ContactForm = () => {
     return (
@@ -151,7 +152,7 @@ const ContactForm = () => {
                         <div className="flex justify-center items-center py-10">
                             <div className="image-container">
                                 <img
-                                    src="/images/z.png" alt="3D rotating item"
+                                    src={zImg} alt="3D rotating item"
                                     className="rotating-image"
                                 />
                             </div>

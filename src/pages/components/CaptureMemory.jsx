@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import hero from '../../assets/images/hero.png';
+import capture1 from '../../assets/images/capture1.png';
+import capture2 from '../../assets/images/capture2.png';
+import capture3 from '../../assets/images/capture3.png';
 
 // Images array
 const heroImages = [
-    "/images/hero.png",
-    "/images/capture1.png",
-    "/images/capture2.png",
-    "/images/capture3.png"
+    hero,
+    capture1,
+    capture2,
+    capture3
 ];
 
 const CaptureMemory = () => {

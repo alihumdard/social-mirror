@@ -8,6 +8,9 @@ import { FaCheck } from 'react-icons/fa';
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
 import FeaturesSection from './components/FeaturesSection';
 import MobileFeacture from './components/MobileFeacture';
+import logosImg from '../assets/images/logos.png';
+import logo2Img from '../assets/images/logo2.png';
+import blackVerticalVideo from '../assets/vidios/Black Vertical.mp4';
 
 
 const steps = [
@@ -46,7 +49,7 @@ const Enterprises = () => {
                         <Link to={URLS.HOME}>
                             <div className="flex items-center">
                                 <img
-                                    src="/images/logos.png"
+                                    src={logosImg}
                                     alt="Social Mirror Logo"
                                     className="h-16"
                                 />
@@ -110,7 +113,7 @@ const Enterprises = () => {
                     {/* Center: Logo */}
                     <Link to={URLS.HOME} className="flex-1 flex justify-center">
                         <img
-                            src="/images/logo2.png"
+                            src={logo2Img}
                             alt="Social Mirror Logo"
                             className="h-10"
                         />
@@ -214,7 +217,7 @@ const Enterprises = () => {
                                 className="rotating2-image w-64 h-64 md:w-96 md:h-96"
                             /> */}
                             <video
-                                src="/vidios/Black Vertical.mp4"
+                                src={blackVerticalVideo}
                                 autoPlay
                                 loop
                                 muted
@@ -337,7 +340,7 @@ const Enterprises = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <video
-                                src="/vidios/Black Vertical.mp4"
+                                src={blackVerticalVideo}
                                 autoPlay
                                 loop
                                 muted
@@ -441,7 +444,7 @@ const Enterprises = () => {
 
                         {/* Logo */}
                         <div className="font-bold text-white text-xl flex items-center justify-center md:justify-start md:order-1">
-                            <img src="/images/logos.png" alt="Social Mirror Logo" />
+                            <img src={logosImg} alt="Social Mirror Logo" />
                         </div>
 
                         {/* Copyright */}

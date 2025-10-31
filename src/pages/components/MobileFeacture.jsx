@@ -1,4 +1,10 @@
 import React from 'react';
+import desktop from '../../assets/images/Desktop.png';
+import desktop2 from '../../assets/images/Desktop2.png';
+import desktop3 from '../../assets/images/Desktop3.png';
+import desktop4 from '../../assets/images/Desktop4.png';
+import desktop5 from '../../assets/images/Desktop5.png';
+import desktop6 from '../../assets/images/Desktop6.png';
 
 // 1. Saara data ek array mein nikaal liya
 // Ab aap aasani se naye features add, edit, ya remove kar sakte hain.
@@ -7,31 +13,31 @@ const featuresList = [
     id: 1,
     title: 'Plug and Play Setup',
     description: 'No developers or setup required. Our mirror auto-connects to the cloud dashboard',
-    imageSrc: '/images/Desktop2.png' // User's 2nd block image
+    imageSrc: desktop2 // User's 2nd block image
   },
   {
     id: 2,
     title: 'Design and display',
     description: 'Capture memories with ease. Craft interactive on-site experiences with our drag and drop editor. Total control, Fully customizable. Guest experience your brand, not ours.',
-    imageSrc: '/images/Desktop3.png' // User's 3rd block image
+    imageSrc: desktop3 // User's 3rd block image
   },
   {
     id: 3,
     title: 'Remote control instantly across multiple locations',
     description: 'Instantly update visuals, offers, or messaging across one or hundreds of mirrors through built-in CMS.',
-    imageSrc: '/images/Desktop4.png'
+    imageSrc: desktop4
   },
   {
     id: 4,
     title: 'Secure & Compliant Data',
     description: 'Capture user data responsibly and build long-term trust. Your data is stored in your own cloud, GDPR-compliant and privacy-first by design.',
-    imageSrc: '/images/Desktop5.png'
+    imageSrc: desktop5
   },
   {
     id: 5,
     title: 'Real-time Analytics and insights',
     description: 'View live performance metrics and conversion data in one dashboard. Export analytics for deeper insights.',
-    imageSrc: '/images/Desktop6.png'
+    imageSrc: desktop6
   }
 ];
 
@@ -47,7 +53,7 @@ const MobileFeacture = () => {
       {/* Maine isse map se bahar rakha hai */}
       <div className="flex justify-center">
         <img
-          src="/images/Desktop.png" 
+          src={desktop} 
           alt="Cloud Dashboard Mockup"
           className="w-full rounded-lg shadow-2xl mt-12"
         />

@@ -1,13 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Camera, LayoutGrid, Video } from 'lucide-react';
+import hero from '../../assets/images/hero.png';
+import capture1 from '../../assets/images/capture1.png';
+import capture2 from '../../assets/images/capture2.png';
+import capture3 from '../../assets/images/capture3.png';
+import logos from '../../assets/images/logos.png';
+import containerImg from '../../assets/images/Container.png';
 
 // Images array (same as yours)
 const heroImages = [
-  "/images/hero.png",
-  "/images/capture1.png",
-  "/images/capture2.png",
-  "/images/capture3.png"
+  hero,
+  capture1,
+  capture2,
+  capture3
 ];
 
 // --- NEW: Button labels array ---
@@ -190,7 +196,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="mb-4 text-center">
-                    <img src="/images/logos.png" alt="" className="h-10 " />
+                    <img src={logos} alt="" className="h-10 " />
                   </div>
                 </div>
 
@@ -231,26 +237,26 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <div class="min-h-screen bg-[#5700FB] flex items-center justify-center p-4 sm:p-8 md:p-12">
-        <div class="max-w-6xl w-full flex flex-col-reverse sm:flex-col md:flex-row items-center bg-[#5700FB]">
+      <div className="min-h-screen bg-[#5700FB] flex items-center justify-center p-4 sm:p-8 md:p-12">
+        <div className="max-w-6xl w-full flex flex-col-reverse sm:flex-col md:flex-row items-center bg-[#5700FB]">
 
-          <div class="relative w-full md:w-1/2 flex items-center justify-center min-h-[400px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[800px] flex-grow">
-            <img src="/images/Container.png" alt="" />
+          <div className="relative w-full md:w-1/2 flex items-center justify-center min-h-[400px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[800px] flex-grow">
+            <img src={containerImg} alt="" />
           </div>
 
-          <div class="w-full md:w-1/2 text-white p-3 md:p-8 lg:p-12 mt-8 md:mt-0">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+          <div className="w-full md:w-1/2 text-white p-3 md:p-8 lg:p-12 mt-8 md:mt-0">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               Wow your guest. <br />
               Turn your ideas into <br />
               immersive content.
             </h2>
-            <p class="text-base sm:text-lg mb-8 max-w-lg">
-              A new way for brands to engage their audience: ethically, <br class="hidden sm:block" />
+            <p className="text-base sm:text-lg mb-8 max-w-lg">
+              A new way for brands to engage their audience: ethically, <br className="hidden sm:block" />
               beautifully, and instantly.
             </p>
             <a
               href="#"
-              class="inline-block border-2 border-white text-black bg-white py-3 px-6 text-sm font-semibold transition-colors duration-300"
+              className="inline-block border-2 border-white text-black bg-white py-3 px-6 text-sm font-semibold transition-colors duration-300"
             >
               Discover our product
             </a>
