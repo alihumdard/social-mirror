@@ -5,7 +5,7 @@ const MirrorBlock = () => {
   return (
     <>
       <h2 className='text-center text-2xl font-semibold pb-10'>Crafted to blend elegance with intelligence.</h2>
-      <div className="flex flex-col md:flex-row justify-center items-start gap-6 ">
+      <div className="flex flex-col md:flex-row justify-center items-start gap-6  2xl:px-20">
         {/* Left side */}
         <div className="flex flex-col gap-6 px-3 md:px-0">
           <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-xl object-cover" />
